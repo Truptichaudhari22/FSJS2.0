@@ -1,0 +1,284 @@
+@media only screen and (min-width: 768px) {
+  :root {
+    /* --heading-font-size: min(3.2vw, 75px); */
+    --heading-font-size: min(max(20px, 3.2vw), 50px);
+  }
+
+  /* Common for All */
+  .btn {
+    width: 11rem;
+  }
+
+  /* Navbar */
+  /* Toggle button */
+  .toggle-button {
+    display: none;
+    position: absolute;
+    top: -100px;
+  }
+  .toggle-button .bar {
+    display: none;
+  }
+
+  /* Nav elements */
+  .navbar-container {
+    padding-top: 30px;
+  }
+  .nav-list-container,
+  .nav-btn-container {
+    display: flex;
+  }
+
+  .nav-list-container {
+    width: 54%;
+  }
+
+  .grow-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5vw;
+  }
+
+  .list-item a {
+    color: hsla(0, 0%, 100%, 0.899);
+  }
+
+  .nav-btn-container {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .list-item a:hover {
+    color: var(--orange);
+  }
+
+  .nav-btn {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  /* Hero Section */
+  .header-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../Assets/Photos/futuristic-bg.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero-left {
+    width: 50%;
+    gap: 50px;
+  }
+
+  .hero-heading {
+    /* font-size: var(--heading-font-size); */
+  }
+
+  @container (min-width:890px) {
+    .hero-description span::after {
+      content: "\a";
+      display: block;
+    }
+  }
+
+  .hero-btn-container {
+    gap: 30px;
+  }
+
+  .hero-right {
+    width: 50%;
+    margin-top: 70px;
+  }
+
+  .play-btn-img {
+    width: 6rem;
+  }
+
+  .play-description {
+    font-size: min(max(20px, 2vw), 35px);
+    margin-top: 100px;
+  }
+
+  .hero-dash {
+    top: 122px;
+  }
+
+  /* Mid Section */
+  .fighting-war-games-heading {
+    /* font-size: var(--heading-font-size); */
+    margin-top: 50px;
+  }
+
+  .fighting-war-games-heading span::after {
+    content: "\a";
+    display: block;
+  }
+
+  .fighting-games-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* War Game */
+
+  .war-game {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+    padding: 0 20px 0 20px;
+  }
+
+  .war-game-left {
+    width: 40%;
+    max-width: 550px;
+    height: 35vw;
+    max-height: 400px;
+  }
+
+  .war-game-right {
+    width: 60%;
+  }
+
+  @container (min-width: 1270px) {
+    .war-game-left {
+      width: 50%;
+      margin-left: 20px;
+    }
+    .war-game-right {
+      width: 50%;
+    }
+  }
+
+  @container (min-width: 800px) {
+    .war-game-heading span::after {
+      content: "\a";
+      display: block;
+    }
+  }
+
+  @container (min-width: 990px) {
+    .war-game-description span::after {
+      content: "\a";
+      display: block;
+    }
+  }
+
+  /* Recommended Game */
+  .recommended-games-heading-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: min(max(20px, 31vw), 450px);
+    margin-top: 200px;
+  }
+
+  .recommended-games-heading {
+    text-align: left;
+  }
+
+  .all-recommended-games {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* Lower Section */
+
+  .most-played-games-container {
+    position: relative;
+  }
+
+  .most-played-games-heading {
+    margin-bottom: 40px;
+  }
+
+  .most-played-games-description {
+    position: relative;
+    width: 480px;
+    text-align: left;
+    top: 0px;
+    right: -150px;
+  }
+
+  .games-of-the-world-image img {
+    width: 65%;
+  }
+
+  .most-played-games-images {
+    gap: 30px;
+    position: relative;
+    top: -20px;
+  }
+
+  .most-played-games-images > div:nth-child(1) {
+    top: -80px;
+  }
+
+  @container (min-width: 900px) {
+    .most-played-games-description {
+      width: 580px;
+      line-height: 1.9rem;
+      top: 40px;
+      right: -180px;
+    }
+
+    .most-played-games-description span::after {
+      content: "\a";
+      display: block;
+    }
+
+    .games-of-the-world-image img {
+      top: 430px;
+    }
+
+    .most-played-games-images {
+      top: 10px;
+    }
+
+    .most-played-games-images > div:nth-child(1) {
+      top: -160px;
+    }
+  }
+
+  .start-playing-container {
+    margin-top: 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url(../Assets/Photos/Rectangle\ 606.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .start-playing-heading {
+    font-size: min(max(20px, 2.8vw), 50px);
+    margin-top: -10px;
+  }
+
+  .footer-container {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: min(max(20px, 7vw), 140px);
+  }
+
+  .footer-container > div:nth-child(1) {
+    align-items: flex-start;
+  }
+
+  .footer-list-container {
+    gap: 30px;
+  }
+
+  .footer-list {
+    gap: 20px;
+  }
+}
